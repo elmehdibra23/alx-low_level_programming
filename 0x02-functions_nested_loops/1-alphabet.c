@@ -6,6 +6,7 @@
  */
 void print_alphabet(void)
 {
+/*comment sec part*/
 char c;
 for (c = 'a'; c <= 'z'; c++)
 {
