@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * brakine print aplphabet code
+ * print_alphabet - prints the lowercase alphabet
  *
  * Return: Always 0.
  */
