@@ -1,14 +1,28 @@
 #include <stdio.h>
-int main() {
-int n1 = 0, n2 = 1, n3, i, count;
-printf("Enter the number of terms: ");
-scanf("%d", &count);
-printf("Fibonacci Series: %d, %d, ", n1, n2);
-for (i = 2; i < count; ++i) {
-n3 = n1 + n2;
-printf("%d, ", n3);
-n1 = n2;
-n2 = n3;
-}
-return 0;
+
+/**
+ * main - prints the first 98 Fibonacci numbers, starting with 1 and 2.
+ * Return: Always 0.
+ */
+
+int main(void)
+{
+    unsigned long int fib1 = 1, fib2 = 2, next_fib;
+    int count = 2; /* start at 2 since we already have 1 and 2 */
+
+    printf("%lu, %lu, ", fib1, fib2);
+
+    while (count < 98)
+    {
+        next_fib = fib1 + fib2;
+        printf("%lu, ", next_fib);
+
+        fib1 = fib2;
+        fib2 = next_fib;
+        count++;
+    }
+    next_fib = fib1 + fib2;
+    printf("%lu\n", next_fib);
+
+    return (0);
 }
