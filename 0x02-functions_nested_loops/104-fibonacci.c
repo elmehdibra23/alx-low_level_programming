@@ -1,17 +1,14 @@
 #include <stdio.h>
-int main(void)
-{
-int count, n1 = 1, n2 = 2, next;
-printf("%d, %d, ", n1, n2);
-for (count = 3; count <= 98; count++)
-{
-next = n1 + n2;
+int main() {
+int n1 = 0, n2 = 1, n3, i, count;
+printf("Enter the number of terms: ");
+scanf("%d", &count);
+printf("Fibonacci Series: %d, %d, ", n1, n2);
+for (i = 2; i < count; ++i) {
+n3 = n1 + n2;
+printf("%d, ", n3);
 n1 = n2;
-n2 = next;
-if (count != 98)
-printf("%d, ", next);
-else
-printf("%d\n", next);
+n2 = n3;
 }
 return 0;
 }
