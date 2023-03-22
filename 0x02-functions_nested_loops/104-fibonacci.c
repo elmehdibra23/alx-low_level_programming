@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -16,10 +17,9 @@ int main(void)
 
     for (i = 3; i <= 98; i++)
     {
-        next = a + b;
-        a = b;
-        b = next;
-
+        next = a + b; /* calculate the next Fibonacci number */
+        a = b; /* update a to be the previous b */
+        b = next; /* update b to be the current next */
         printf(", %lu", next); /* print the next Fibonacci number */
     }
 
