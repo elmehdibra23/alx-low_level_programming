@@ -1,6 +1,7 @@
 #include "main.h"
-/*reset to 98
- */
+/*
+* reset to ninty-eight
+*/
 void reset_to_98(int *n)
 {
 *n = 98;
