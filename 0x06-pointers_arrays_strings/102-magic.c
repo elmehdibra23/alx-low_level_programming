@@ -16,7 +16,7 @@ int main(void)
    * - only one statement
    * - you are not allowed to code anything else than this line of code
    */
-  *(p + (2 * sizeof(int))) = 98;
+  printf("a[2] = %d\n", *((int *)((char *)p + 6)));
   /* ...so that this prints 98\n */
   printf("a[2] = %d\n", a[2]);
   return (0);
