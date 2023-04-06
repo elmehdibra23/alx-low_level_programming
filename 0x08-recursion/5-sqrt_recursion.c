@@ -21,7 +21,7 @@ int _sqrt_recursion(int n)
 return (sqrt_helper(n, 1));
 }
 /**
- * sqrt_helper - Helper function to recursively calculate the square root of a number.
+ * sqrt_helper - square root of a number.
  *
  * @n: The number to calculate the square root of.
  * @i: The current integer to check as a possible square root.
