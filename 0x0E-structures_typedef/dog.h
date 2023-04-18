@@ -1,6 +1,5 @@
 #ifndef DOG_H
 #define DOG_H
-
 /**
  * struct dog - Define a new type struct dog with the following elements
  * @name: Pointer to char representing the dog's name
@@ -13,13 +12,10 @@
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+char *name;
+float age;
+char *owner;
 };
-
 /* Define a new type dog_t as a new name for the type struct dog */
 typedef struct dog dog_t;
-
 #endif /* DOG_H */
-
