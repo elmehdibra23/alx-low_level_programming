@@ -1,21 +1,30 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef _DOG_H_
+#define _DOG_H_
+
 /**
- * struct dog - Define a new type struct dog with the following elements
- * @name: Pointer to char representing the dog's name
- * @age: Float representing the dog's age
- * @owner: Pointer to char representing the dog's owner
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
+
+/**
+ * struct dog - struct that stores some information of a dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  *
- * Description: A structure named "dog" with three elements: name, age, and owner.
- * The name and owner elements are pointers to char (char *), and the age element
- * is of type float.
+ * Description: struct called "dog" that stores its name, its age
+ * and the name of its owner.
  */
 struct dog
 {
-char *name;
-float age;
-char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
-/* Define a new type dog_t as a new name for the type struct dog */
-typedef struct dog dog_t;
-#endif /* DOG_H */
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+
+#endif
