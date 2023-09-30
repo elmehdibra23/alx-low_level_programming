@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "main.h"
 #include <stddef.h>
 /**
  * binary_to_uint - Converts a binary string to an unsigned int.
