@@ -3,12 +3,11 @@
 #include <fcntl.h>
 #include <unistd.h>
 /**
-* apend_text_to_file  apends text at the end of a file
-* @filename: name of the file
-* @text_content: NULL terminated str to add at the end
-*
-* Return: 1 on success, -1 on failure
-*/
+ * append_text_to_file - appends text to the end of a file
+ * @filename: pointer to the file name
+ * @text_content: pointer to the text content
+ * Return: 1 on success, -1 on failure
+ */
 int append_text_to_file(const char *filename, char *text_content)
 {
 int i = 0, file;
